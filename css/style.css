@@ -2,6 +2,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -27,8 +28,8 @@ h2 {
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -42,13 +43,14 @@ header {
 
 .clearfix::after {
   content: "";
+
   display: table;
   clear: both;
 }
 
 .container {
-  margin: 0 auto;
   width: 1160px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -75,8 +77,8 @@ header {
 
 .main-navigation li {
   display: inline-block;
-  margin-right: 45px;
   height: 39px;
+  margin-right: 45px;
   padding: 0;
   padding-top: 26px;
 }
@@ -85,19 +87,20 @@ header {
   float: right;
   width: 160px;
   height: 39px;
-  padding-top: 26px;
   margin-left: 40px;
+  padding-top: 26px;
 }
 
 .slider {
-  width: 1160px;
   position: relative;
+
+  width: 1160px;
 }
 
 .slider-left {
+  float: left;
   width: 560px;
   height: 266px;
-  float: left;
   margin-top: 86px;
   margin-bottom: 80px;
 }
@@ -125,25 +128,27 @@ header {
 }
 
 .slider-headline {
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
 }
 
 .slider-indicator {
   position: absolute;
-  left: 536px;
   top: 316px;
+  left: 536px;
 }
 
 .slider-indicator li {
   display: inline-block;
-  list-style-type: none;
   width: 18px;
   height: 18px;
+  margin-right: 17px;
+
+  list-style-type: none;
+
   background-color: #ffffff;
   border-radius: 50%;
-  margin-right: 17px;
 }
 
 .slide-2,
@@ -156,8 +161,8 @@ header {
 }
 
 .services-item {
-  width: 300px;
   float: left;
+  width: 300px;
   margin-right: 100px;
   margin-bottom: 80px;
 }
@@ -169,8 +174,8 @@ header {
 .description {
   float: left;
   width: 700px;
-  margin-right: 100px;
   margin-top: 80px;
+  margin-right: 100px;
 }
 
 .description li {
@@ -191,8 +196,9 @@ header {
   display: inline-block;
   width: 260px;
   margin-right: 40px;
+
   text-align: center;
-  }
+}
 
 .projects-list li:last-child {
   margin-right: 0;
@@ -203,8 +209,9 @@ header {
 }
 
 .map {
-  margin: 0 auto;
   position: relative;
+
+  margin: 0 auto;
 }
 
 .main-index .map {
@@ -219,11 +226,12 @@ header {
   position: absolute;
   top: 54px;
   left: 140px;
+
   width: 319px;
-  background-color: #ffffff;
   padding: 50px;
   padding-bottom: 47px;
 
+  background-color: #ffffff;
 }
 
 .footer {
@@ -247,21 +255,25 @@ header {
 }
 
 .feedback-form {
-  width: 960px;
-  height: 590px;
-  display: none;
   position: fixed;
   top: 50px;
   left: 50%;
+
+  display: none;
+  width: 960px;
+  height: 590px;
   margin-left: -480px;
+
+  background-color: #ffffff;
 }
 
 .shop-title h1 {
+  width: 760px;
+  margin: 0 auto;
   padding-top: 84px;
   padding-bottom: 116px;
-  width:760px;
+
   line-height: 55px;
-  margin: 0 auto;
 }
 
 .catalog {
@@ -269,20 +281,20 @@ header {
 }
 
 .filter {
-  width: 260px;
   float: left;
+  width: 260px;
   margin-right: 140px;
 }
 
 .arrange {
-  width: 760px;
   float: right;
+  width: 760px;
 }
 
 .arrange-heading {
   display: block;
-  width: 160px;
   float: left;
+  width: 160px;
   margin-right: 240px;
 }
 
@@ -302,13 +314,14 @@ header {
 
 .arrange li {
   display: inline-block;
+
   vertical-align: top;
 }
 
 .catalog-content {
-  margin-top: 60px;
-  width: 760px;
   float: left;
+  width: 760px;
+  margin-top: 60px;
 }
 
 .flypage {
@@ -323,9 +336,9 @@ header {
 
 .catalog-pages {
   float: left;
+  width: 443px;
   margin-top: 60px;
   margin-left: 400px;
-  width: 443px;
 }
 
 .catalog-pages li,
@@ -335,23 +348,5 @@ header {
 
 .catalog-pages ol {
   display: inline-block;
-  padding: 0px;
-}
-
-/*для помощи в разметке сетки - границы блоков*/
-
-.outline-first-level {
-  outline: 1px solid red;
-}
-
-.outline-second-level {
-  outline: 1px solid green;
-}
-
-.outline-third-level {
-  outline: 1px solid blue;
-}
-
-.outline-fourth-level {
-  outline: 1px solid yellow;
+  padding: 0;
 }

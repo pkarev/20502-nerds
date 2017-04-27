@@ -251,8 +251,9 @@ header {
   height: 590px;
   display: none;
   position: fixed;
-  top: 10%;
-  left: 10%;
+  top: 50px;
+  left: 50%;
+  margin-left: -480px;
 }
 
 .shop-title h1 {

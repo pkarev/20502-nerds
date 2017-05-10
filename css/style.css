@@ -21,7 +21,6 @@ img {
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -315,6 +314,7 @@ a.slider-indicator-active {
   color: #283136;
   margin: 0;
   padding: 0;
+  padding-right: 20px;
   margin-top: 17px;
 }
 
@@ -377,6 +377,7 @@ a.slider-indicator-active {
   color: #283136;
   margin: 0;
   padding: 0;
+  padding-right: 20px;
   margin-top: 33px;
 }
 
@@ -558,6 +559,7 @@ a.slider-indicator-active {
   margin: 0;
   padding: 0;
   margin-top: 23px;
+  padding-right: 10px;
 }
 
 .contacts .btn {
@@ -666,6 +668,7 @@ a.slider-indicator-active {
   margin-top: -290px;
   background-color: #ffffff;
   padding: 73px 100px 84px;
+  box-shadow: 0px 20px 50px -5px black;
 }
 
 .feedback-form-close {
@@ -786,7 +789,7 @@ a.slider-indicator-active {
   border-radius: 3px;
   box-sizing: border-box;
   display: block;
-  height: 92px;
+  height: 118px;
   margin-bottom: 47px;
   color: #b7b7b7;
 }
@@ -796,6 +799,7 @@ a.slider-indicator-active {
 }
 
 .feedback-form textarea:hover {
+  border: 2px solid #b4b9bb;
 }
 
 .feedback-form textarea:invalid {
@@ -978,7 +982,7 @@ textarea:-moz-placeholder {
 }
 
 .price-controls label {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
@@ -989,7 +993,7 @@ textarea:-moz-placeholder {
 }
 
 .price-controls input {
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
@@ -1014,7 +1018,7 @@ textarea:-moz-placeholder {
 .grid label,
 .features label {
   display: block;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #283136;
@@ -1153,10 +1157,10 @@ textarea:-moz-placeholder {
 }
 
 .arrange-group-2 {
-  display: block;
+  display: inline-block;
   margin: 0;
   padding: 0;
-  float: right;
+  text-align: right;
   width: 60px;
 }
 
@@ -1185,11 +1189,11 @@ textarea:-moz-placeholder {
   opacity: 1;
 }
 
-.arrange-group-1 .arrange-btn:hover:not(.arrange-btn-active) {
+.arrange-btn:hover:not(.arrange-btn-active) {
   opacity: 0.6;
 }
 
-.arrange-group-1 .arrange-btn:not(.arrange-btn-active):active {
+.arrange-btn:active:not(.arrange-btn-active) {
   opacity: 1;
 }
 
@@ -1208,7 +1212,7 @@ textarea:-moz-placeholder {
 	height: 9px;
   background: url("../img/sort-down.png") no-repeat;
   position: absolute;
-  left: 21px;
+  left: 5px;
   top: 7px;
 }
 
@@ -1219,7 +1223,7 @@ textarea:-moz-placeholder {
 	height: 9px;
   background: url("../img/sort-up.png") no-repeat;
   position: absolute;
-  left: 28px;
+  left: 8px;
   top: 7px;
 }
 
@@ -1228,11 +1232,11 @@ textarea:-moz-placeholder {
   cursor: text;
 }
 
-.arrange-group-1 .arrange-btn:not(.arrange-btn-active):hover {
+.sort-btn:hover:not(.sort-btn-active) {
   opacity: 0.6;
 }
 
-.arrange-group-1 .arrange-btn:not(.arrange-btn-active):active {
+.sort-btn:active:not(.sort-btn-active) {
   opacity: 1;
 }
 

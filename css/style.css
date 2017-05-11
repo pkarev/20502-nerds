@@ -2,6 +2,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
@@ -21,6 +22,7 @@ img {
 
 .clearfix::after {
   content: "";
+
   display: table;
   clear: both;
 }
@@ -57,34 +59,39 @@ img {
 
 .main-navigation ul {
   margin: 0;
-  padding: 0;
   margin-top: 17px;
+  padding: 0;
+
   font-size: 0;
-  }
+}
 
 .main-navigation li {
   display: inline-block;
-  vertical-align: top;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
   font-size: 0;
+  vertical-align: top;
 }
 
 .main-navigation a,
 .cart-block a {
+  position: relative;
+
   display: inline-block;
-  color: #000000;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 600;
   padding-top: 10px;
+  padding-right: 24px;
   padding-bottom: 10px;
   padding-left: 23px;
-  padding-right: 24px;
-  position: relative;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  font-family: Roboto, Arial, sans-serif;
+  vertical-align: top;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main-navigation-active {
@@ -93,16 +100,18 @@ img {
 .main-navigation-active::after,
 .cart-block-active::after {
   content: "";
-  display: block;
   position: absolute;
-  height: 2px;
-  background-color: #fb565a;
-  bottom: 5px;
   right: 24px;
+  bottom: 5px;
   left: 23px;
+
+  display: block;
+  height: 2px;
+
+  background-color: #fb565a;
 }
 
-.main-navigation a:not(.main-navigation-active):hover  {
+.main-navigation a:not(.main-navigation-active):hover {
   color: #f8888b;
 }
 
@@ -124,15 +133,17 @@ img {
 
 .cart-block a::before {
   content: "";
+  position: absolute;
+  top: 17px;
+  left: -17px;
+
   display: block;
   width: 15px;
   height: 15px;
-  position: absolute;
-  left: -17px;
-  top: 17px;
+
   background: url("../img/cart-icon.png") no-repeat;
-  opacity: 0.3;
   background-position: 0 -1px;
+  opacity: 0.3;
 }
 
 .cart-block a:not(.cart-block-active):hover {
@@ -145,6 +156,7 @@ img {
 
 .slider {
   position: relative;
+
   width: 1160px;
 }
 
@@ -154,36 +166,40 @@ img {
 }
 
 .slider-headline {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: bold;
   display: block;
-  padding: 0;
   margin: 0;
   margin-top: 71px;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 55px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .slider-left p {
-  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  margin-top: 27px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 24px;
-  margin: 0;
-  padding: 0;
-  margin-top: 27px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .btn {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
   margin: 0;
   padding: 0;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: #fb565a;
 }
 
@@ -192,16 +208,18 @@ img {
 }
 
 .btn:active {
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
 }
 
 .slider-left .btn {
   display: block;
   width: 240px;
-  padding: 16px 0;
   margin-top: 38px;
   margin-bottom: 80px;
+  padding: 16px 0;
+
   border-radius: 5px;
 }
 
@@ -210,18 +228,21 @@ img {
 }
 
 .slide-1 {
+  background-color: #eeeeee;
   background-image: url("../img/slider-phones.png");
   background-repeat: no-repeat;
   background-position: 431px 10px;
 }
 
 .slide-2 {
+  background-color: #eeeeee;
   background-image: url("../img/slider-desktop.png");
   background-repeat: no-repeat;
   background-position: 496px 1px;
 }
 
 .slide-3 {
+  background-color: #eeeeee;
   background-image: url("../img/slider-tablet.png");
   background-repeat: no-repeat;
   background-position: 400px 19px;
@@ -229,7 +250,7 @@ img {
 
 .slider-indicator {
   position: absolute;
-  top: 306px;
+  top: 315px;
   left: 542px;
 }
 
@@ -242,23 +263,26 @@ img {
   display: inline-block;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+  vertical-align: top;
 }
 .slider-indicator a {
   display: block;
   width: 4px;
   height: 4px;
-  border: 2px solid #ffffff;
   margin-right: 23px;
-  box-shadow: 0 0 0 5px #ffffff;
+
   background-color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50%;
+  box-shadow: 0 0 0 5px #ffffff;
 }
 
 a.slider-indicator-active {
   background-color: white;
-  box-shadow: 0 0 0 5px white;
   border: 2px solid #c1c1c1;
+  box-shadow: 0 0 0 5px white;
 }
 
 .slide-2,
@@ -276,8 +300,10 @@ a.slider-indicator-active {
 
 .services::after {
   content: "";
+
   display: block;
   height: 3px;
+
   background-color: #eeeeee;
 }
 
@@ -291,38 +317,40 @@ a.slider-indicator-active {
 .services-item img {
   margin: 0;
   padding: 0;
-
 }
 
 .services-item h2 {
-  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  margin-top: 18px;
+  padding: 0;
+
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
-  margin: 0;
-  padding: 0;
-  margin-top: 18px;
-  }
+  text-transform: uppercase;
+}
 
 .services-item p {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #283136;
   margin: 0;
+  margin-top: 17px;
   padding: 0;
   padding-right: 20px;
-  margin-top: 17px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #283136;
 }
 
 .services .btn {
-  margin-top: 32px;
   display: block;
   width: 82px;
+  margin-top: 32px;
   padding: 16px 39px;
+
   border-radius: 5px;
 }
 
@@ -360,67 +388,74 @@ a.slider-indicator-active {
 }
 
 .description-headline {
-  font-family: Roboto, Arial, sans-serif;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  font-weight: bold;
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
-  display: block;
-  padding: 0;
-  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .description p {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #283136;
   margin: 0;
+  margin-top: 33px;
   padding: 0;
   padding-right: 20px;
-  margin-top: 33px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #283136;
 }
 
 .description h3 {
-  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  margin-top: 39px;
+  padding: 0;
+
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  margin-top: 39px;
 }
 
 .description ul {
   margin: 0;
-  padding: 0;
   margin-bottom: 77px;
+  padding: 0;
 }
 
 .description li {
-  list-style-type: none;
+  position: relative;
+
   margin: 0;
   padding: 0;
-  padding-left: 38px;
   padding-top: 24px;
-  font-family: Roboto, Arial, sans-serif;
+  padding-left: 38px;
+
+  list-style-type: none;
   font-size: 16px;
   line-height: 24px;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
-  position: relative;
 }
 
 .description li::before {
   content: "";
-  display: block;
-  width: 25px;
-  height: 2px;
-  background-color: #fb565a;
   position: absolute;
   top: 34px;
   left: 1px;
+
+  display: block;
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
 }
 
 .kpi {
@@ -429,54 +464,81 @@ a.slider-indicator-active {
 }
 
 .kpi h3 {
-  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0 17px;
+
+  font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0 17px;
-  margin-top: 30px;
 }
 
 .kpi ul {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
 .kpi li {
+  float: left;
+  width: 120px;
   margin: 0;
   padding: 0;
-  width: 120px;
-  float: left;
 }
 
 .kpi-value {
-  font-family: Roboto, Arial, sans-serif;
   display: block;
+  margin-top: 40px;
+
+  font-weight: bold;
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
-  margin-top: 40px;
 }
 
 .kpi-name {
   display: block;
-  font-family: Roboto, Arial, sans-serif;
+  margin-top: 20px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
-  margin-top: 20px;
 }
 
 .about-us::after {
   content: "";
+
   display: block;
   height: 3px;
+
+  background-color: #eeeeee;
+}
+
+.projects img {
+  display: block;
+}
+
+.projects-list li {
+  position: relative;
+}
+
+.projects-list li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: -20px;
+
+  display: block;
+  width: 2px;
+  height: 52px;
+
   background-color: #eeeeee;
 }
 
@@ -486,20 +548,23 @@ a.slider-indicator-active {
 }
 
 .projects-list li {
-  margin: 0;
-  padding: 0;
   display: inline-block;
-  vertical-align: top;
   width: 260px;
+  margin: 0;
   margin-right: 40px;
-  opacity: 0.2;
+  padding: 0;
+
+  vertical-align: top;
 }
 
-.projects-list li:hover {
+.projects-list img {
+  opacity: 0.2;
+}
+.projects-list img:hover {
   opacity: 1;
 }
 
-.projects-list li:active {
+.projects-list img:active {
   opacity: 0.1;
 }
 
@@ -509,20 +574,25 @@ a.slider-indicator-active {
 
 .projects-list::after {
   content: "";
+
   display: block;
   height: 3px;
+
   background-color: #eeeeee;
 }
 
 .map {
   position: relative;
+
   height: 416px;
-  background: url("../img/map.png") no-repeat;
+
+  background: #e9e5dc url("../img/map.png") no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .main-index .map {
-  margin-top: 68px;
+  margin-top: 74px;
 }
 
 .main-catalog .map {
@@ -535,44 +605,48 @@ a.slider-indicator-active {
   left: 50%;
 
   width: 219px;
-  padding: 50px 50px;
   margin-left: -580px;
+  padding: 50px 50px;
+
   background-color: #ffffff;
 }
 
 .contacts h2 {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #000000;
   margin: 0;
   padding: 0;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .contacts p {
-  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  margin-top: 23px;
+  padding: 0;
+  padding-right: 10px;
+
   font-size: 16px;
   line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
   color: #666666;
-  margin: 0;
-  padding: 0;
-  margin-top: 23px;
-  padding-right: 10px;
 }
 
 .contacts .btn {
-  margin-top: 36px;
   display: block;
   width: 134px;
+  margin-top: 36px;
   padding: 16px 43px;
+
   border-radius: 5px;
 }
 
 .footer {
-  padding-top: 70px;
   margin-bottom: 70px;
+  padding-top: 70px;
 }
 
 .footer.catalog-footer {
@@ -583,8 +657,8 @@ a.slider-indicator-active {
   float: left;
   width: 360px;
   margin: 0;
-  padding: 0;
   margin-right: 20px;
+  padding: 0;
 }
 
 .social ul {
@@ -593,20 +667,23 @@ a.slider-indicator-active {
 }
 
 .social li {
+  display: inline-block;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
-  display: inline-block;
   vertical-align: top;
 }
 
 .social-btn {
-  text-indent: -1000px;
   display: block;
   width: 78px;
   height: 78px;
-  border-radius: 50px;
   margin-right: 10px;
+
+  text-indent: -1000px;
+
+  border-radius: 50px;
 }
 
 .social-btn:hover {
@@ -636,48 +713,55 @@ a.slider-indicator-active {
 
 .footer-cta b {
   display: block;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: bold;
-  color: #000000;
   margin: 0;
   padding: 5px;
   padding-left: 20px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #000000;
 }
 
 .footer-cta p {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: normal;
-  color: #444444;
   margin: 0;
   padding: 5px;
   padding-left: 20px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #444444;
 }
 
 .feedback-form {
   position: fixed;
   top: 50%;
   left: 50%;
+
   display: none;
   width: 760px;
   height: 433px;
-  margin-left: -480px;
   margin-top: -290px;
-  background-color: #ffffff;
+  margin-left: -480px;
   padding: 73px 100px 84px;
-  box-shadow: 0px 20px 50px -5px black;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 50px -5px black;
 }
 
 .feedback-form-close {
   position: absolute;
   top: 78px;
   right: 110px;
+
   width: 21px;
   height: 21px;
+
   font-size: 0;
+
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -689,8 +773,10 @@ a.slider-indicator-active {
   position: absolute;
   top: 10px;
   left: 2px;
+
   width: 25px;
   height: 5px;
+
   background-color: #fecccd;
   border-radius: 1px;
 }
@@ -714,14 +800,15 @@ a.slider-indicator-active {
 }
 
 .feedback-form b {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: bold;
   display: block;
-  padding: 0;
   margin: 0;
   margin-bottom: 49px;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .feedback-form-left {
@@ -736,25 +823,28 @@ a.slider-indicator-active {
 
 .feedback-form label {
   display: block;
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
-  padding: 0;
   margin: 0;
   margin-bottom: 11px;
+  padding: 0;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .feedback-form input[type="text"] {
   display: block;
   width: 332px;
   height: 18px;
-  padding: 16px 14px;
   margin: 0;
-  font-family: Roboto, Arial, sans-serif;
+  padding: 16px 14px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-family: Roboto, Arial, sans-serif;
+
   border: none;
   border: 2px solid #d7dcde;
   border-radius: 3px;
@@ -777,21 +867,24 @@ a.slider-indicator-active {
 }
 
 .feedback-form textarea {
+  display: block;
+  box-sizing: border-box;
   width: 100%;
-  resize: none;
-  padding: 13px 14px;
+  height: 118px;
   margin: 0;
-  font-family: Roboto, Arial, sans-serif;
+  margin-bottom: 47px;
+  padding: 13px 14px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-weight: normal;
+  font-family: Roboto, Arial, sans-serif;
+  color: #b7b7b7;
+
   border: 2px solid #d7dcde;
   border-radius: 3px;
-  box-sizing: border-box;
-  display: block;
-  height: 118px;
-  margin-bottom: 47px;
-  color: #b7b7b7;
+
+  resize: none;
 }
 
 .feedback-form textarea:focus {
@@ -863,18 +956,20 @@ textarea:-moz-placeholder {
 }/* Firefox 18- */
 
 .feedback-form input[type="submit"] {
-  border: none;
-  border-radius: 5px;
   display: block;
   width: 240px;
   padding: 16px 10px;
-  background-color: #fb565a;
-  color: #ffffff;
-  font-family: Roboto, Arial, sans-serif;
+
+  font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+  border-radius: 5px;
 }
 
 .feedback-form input[type="submit"]:hover {
@@ -882,89 +977,99 @@ textarea:-moz-placeholder {
 }
 
 .feedback-form input[type="submit"]:active {
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
 }
 
 .shop-title h1 {
   width: 760px;
-  text-align: center;
   margin: 0 auto;
   padding: 0;
   padding-top: 71px;
   padding-bottom: 108px;
-  font-family: Roboto, Arial, sans-serif;
+
+  font-weight: bold;
   font-size: 55px;
   line-height: 55px;
-  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
   color: #000000;
 }
 
 .filter {
   float: left;
   width: 260px;
-  margin-right: 140px;
   margin-top: 55px;
+  margin-right: 140px;
 }
 
 .price,
 .grid,
 .features {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  border: none;
 }
 
 .form-heading {
-  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  margin-bottom: 17px;
+  padding: 0;
+
+  font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 17px;
   text-transform: uppercase;
-  }
+}
 
 .price {
   width: 260px;
-  padding: 0;
   margin: 0;
   margin-bottom: 54px;
-  }
+  padding: 0;
+}
 
 .price-range {
   position: relative;
+
   height: 41px;
-  padding: 0 20px;
-  background: #eeeeee;
-  border-radius: 5px;
-  padding-top: 39px;
   margin-top: 32px;
   margin-bottom: 13px;
+  padding: 0 20px;
+  padding-top: 39px;
+
+  background: #eeeeee;
+  border-radius: 5px;
 }
 
 .price-range .scale {
   height: 2px;
+
   background: #d7dcde;
 }
 
 .price-range .bar {
   width: 70%;
   height: 2px;
+
   background: #00ca74;
 }
 
 .price-range .toggle {
   position: absolute;
   top: 30px;
-  left: 0px;
+  left: 0;
+
   width: 4px;
   height: 4px;
-  border: 8px solid #fff;
-  border-radius: 50%;
+
   background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
@@ -982,28 +1087,31 @@ textarea:-moz-placeholder {
 }
 
 .price-controls label {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #283136;
-  font-size: 16px;
   display: inline-block;
   width: 50%;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
+  vertical-align: top;
+  color: #283136;
   text-transform: uppercase;
 }
 
 .price-controls input {
-  font-family: Roboto, Arial, sans-serif;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+
   font-size: 16px;
   line-height: 22px;
-  color: #283136;
-  width: 60px;
-  padding: 8px 10px;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
+  color: #283136;
+
+  background: #eeeeee;
   border: none;
   border-radius: 5px;
-  background: #eeeeee;
-  margin-left: 10px;
 }
 
 .range-max {
@@ -1017,16 +1125,19 @@ textarea:-moz-placeholder {
 
 .grid label,
 .features label {
+  position: relative;
+
   display: block;
-  font-family: Roboto, Arial, sans-serif;
+  width: 160px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  padding-left: 36px;
+
   font-size: 16px;
   line-height: 20px;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
-  width: 160px;
-  padding-left: 36px;
-  padding-bottom: 12px;
-  padding-top: 8px;
-  position: relative;
+
   cursor: pointer;
 }
 
@@ -1038,6 +1149,7 @@ textarea:-moz-placeholder {
 .grid input[type="radio"]:disabled + label,
 .features input[type="checkbox"]:disabled + label {
   color: #283136;
+
   opacity: 0.3;
 }
 
@@ -1048,30 +1160,32 @@ textarea:-moz-placeholder {
 
 .grid label::before {
   content: "";
+  position: absolute;
+  top: 13px;
+  left: 9px;
+
   width: 8px;
   height: 8px;
+
   background-color: white;
   border-radius: 50%;
-  box-shadow:
-    0 0 0 5px white,
-    0 0 0 8px #b8b8b8;
-  position: absolute;
-  left: 9px;
-  top: 13px;
+  box-shadow: 0 0 0 5px white,
+  0 0 0 8px #b8b8b8;
 }
 
 .grid input[type="radio"]:checked + label::before {
   content: "";
+  position: absolute;
+  top: 13px;
+  left: 9px;
+
   width: 8px;
   height: 8px;
+
   background-color: #b8b8b8;
   border-radius: 50%;
-  box-shadow:
-    0 0 0 5px white,
-    0 0 0 8px #b8b8b8;
-  position: absolute;
-  left: 9px;
-  top: 13px;
+  box-shadow: 0 0 0 5px white,
+  0 0 0 8px #b8b8b8;
 }
 
 .features {
@@ -1081,42 +1195,48 @@ textarea:-moz-placeholder {
 
 .features label::before {
   content: "";
+  position: absolute;
+  top: 7px;
+  left: 1px;
+
   display: block;
   width: 27px;
   height: 23px;
+
   background: url("../img/checkbox-off.png") no-repeat 0 0;
-  position: absolute;
-  left: 1px;
-  top: 7px;
   opacity: 0.4;
 }
 
 .features input[type="checkbox"]:checked + label::before {
   content: "";
+  position: absolute;
+  top: 7px;
+  left: 1px;
+
   display: block;
   width: 27px;
   height: 23px;
+
   background: url("../img/checkbox-on.png") no-repeat 0 0;
-  position: absolute;
-  left: 1px;
-  top: 7px;
   opacity: 0.4;
 }
 
 .filter .btn {
-  border: none;
-  border-radius: 5px;
   display: block;
   width: 260px;
   padding: 16px 10px;
-  background-color: #eeeeee;
-  color: #000000;
-  font-family: Roboto, Arial, sans-serif;
+
+  font-weight: bold;
   font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  font-family: Roboto, Arial, sans-serif;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -1125,8 +1245,9 @@ textarea:-moz-placeholder {
 }
 
 .filter input[type="submit"]:active {
-  background-color: #d5d5d5;
   color: #a9a9a9;
+
+  background-color: #d5d5d5;
 }
 
 .arrange {
@@ -1140,49 +1261,55 @@ textarea:-moz-placeholder {
   float: left;
   width: 160px;
   margin-right: 240px;
-  font-family: Roboto, Arial, sans-serif;
+
+  font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
+  text-transform: uppercase;
 }
 
 .arrange-group-1 {
   display: block;
-  margin: 0;
-  padding: 0;
   float: left;
   width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .arrange-group-2 {
   display: inline-block;
+  width: 60px;
   margin: 0;
   padding: 0;
+
+  vertical-align: top;
   text-align: right;
-  width: 60px;
 }
 
 .arrange li {
   display: inline-block;
-  vertical-align: top;
   margin: 0;
   padding: 0;
+
+  vertical-align: top;
 }
 
 .arrange-btn {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #000000;
-  opacity: 0.3;
-  text-decoration: none;
   margin: 0;
+  margin-right: -5px;
   padding: 0;
   padding-right: 27px;
-  margin-right: -5px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  opacity: 0.3;
 }
 
 .arrange-btn-active {
@@ -1197,39 +1324,45 @@ textarea:-moz-placeholder {
   opacity: 1;
 }
 
+a.sort-btn {
+  font-size: 0;
+}
+
 .sort-btn {
+  position: relative;
+
   display: block;
   width: 20px;
   height: 20px;
-  position: relative;
-  opacity: 0.3;
+
+  opacity: 0.2;
+}
+
+.sort-btn::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  border: 10px solid #000000;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
 }
 
 .z-a::before {
-  content: "";
-  display: block;
-	width: 9px;
-	height: 9px;
-  background: url("../img/sort-down.png") no-repeat;
-  position: absolute;
-  left: 5px;
-  top: 7px;
+  border-bottom-width: 0;
 }
 
 .a-z::before {
-  content: "";
-  display: block;
-	width: 9px;
-	height: 9px;
-  background: url("../img/sort-up.png") no-repeat;
-  position: absolute;
-  left: 8px;
-  top: 7px;
+  left: 10px;
+
+  border-top-width: 0;
 }
 
 .sort-btn-active {
   opacity: 1;
-  cursor: text;
 }
 
 .sort-btn:hover:not(.sort-btn-active) {
@@ -1251,13 +1384,15 @@ textarea:-moz-placeholder {
 }
 
 .flypage {
+  position: relative;
+
   float: left;
   width: 360px;
   margin-right: 40px;
-  background-color: #e9e9e9;
-  padding-top: 39px;
-  position: relative;
   margin-bottom: 30px;
+  padding-top: 39px;
+
+  background-color: #e9e9e9;
 }
 
 .flypage:hover {
@@ -1282,18 +1417,19 @@ textarea:-moz-placeholder {
 
 .flypage::before {
   content: "";
-  width: 15px;
-  height: 15px;
-  background-color: white;
-  border-radius: 50%;
-  margin: 0;
-  padding: 0;
   position: absolute;
   top: 10px;
   left: 15px;
-  box-shadow:
-    23px 0px 0 0 white,
-    46px 0px 0 0 white;
+
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 23px 0 0 0 white,
+  46px 0 0 0 white;
 }
 
 
@@ -1302,64 +1438,71 @@ textarea:-moz-placeholder {
 }
 
 .flypage-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
   display: none;
+  width: 100%;
   margin: 0;
   padding: 0;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+
   background-color: #eeeeee;
-  width: 100%;
 }
 
 .flypage-hover h2 {
   margin: 0;
   padding: 0;
 }
+
 .flypage-hover .flypage-title {
   display: block;
   width: 160px;
-  text-align: center;
-  padding: 0;
   margin: 0 auto;
   margin-top: 26px;
-  font-family: Roboto, Arial, sans-serif;
+  padding: 0;
+
+  font-weight: 600;
   font-size: 18px;
   line-height: 30px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: 600;
   text-decoration: none;
-  color: #000000;
 }
 
 .flypage-hover p {
   display: block;
   width: 240px;
-  text-align: center;
-  padding: 0 10px;
   margin: 0 auto;
   margin-top: 16px;
-  font-family: Roboto, Arial, sans-serif;
+  padding: 0 10px;
+
   font-size: 16px;
   line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
   color: #666666;
 }
 
 .flypage-hover .flypage-price {
   display: block;
   width: 160px;
-  color: #ffffff;
-  font-family: Roboto, Arial, sans-serif;
+  margin: 30px auto 43px;
+  padding: 16px 20px;
+
   font-size: 16px;
   line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 16px 20px;
-  margin: 30px auto 43px;
-  text-align: center;
-  border-radius: 5px;
+
   background-color: #fb565a;
+  border-radius: 5px;
 }
 
 .flypage-price:hover {
@@ -1367,8 +1510,9 @@ textarea:-moz-placeholder {
 }
 
 .flypage-price:active {
-  background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
 }
 
 .flypage:hover .flypage-hover {
@@ -1386,6 +1530,7 @@ textarea:-moz-placeholder {
   display: inline-block;
   margin: 0;
   padding: 0;
+
   font-size: 0;
   vertical-align: top;
 }
@@ -1394,6 +1539,7 @@ textarea:-moz-placeholder {
   display: inline-block;
   margin: 0;
   padding: 0;
+
   font-size: 0;
   vertical-align: top;
 }
@@ -1401,18 +1547,20 @@ textarea:-moz-placeholder {
 .catalog-pages .page-number,
 .catalog-pages .page-next {
   display: inline-block;
-  color: #000000;
-  background-color: #eeeeee;
-  font-family: Roboto, Arial, sans-serif;
+  width: 50px;
+  margin-right: 10px;
+
+  font-weight: bold;
   font-size: 16px;
+  line-height: 50px;
+  font-family: Roboto, Arial, sans-serif;
+  vertical-align: top;
+  text-align: center;
+  color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
-  width: 50px;
-  line-height: 50px;
-  text-align: center;
-  vertical-align: top;
-  margin-right: 10px;
+
+  background-color: #eeeeee;
   border-radius: 5px;
 }
 
@@ -1423,19 +1571,23 @@ textarea:-moz-placeholder {
 
 .catalog-pages .page-number:not(.page-number-active):active,
 .catalog-pages .page-next:not(.page-number-active):active {
-  background-color: #dfdfdf;
   color: rgba(0, 0, 0, 0.3);
+
+  background-color: #dfdfdf;
 }
 
 .catalog-pages .page-next {
   min-width: 240px;
-  border-radius: 5px;
   padding: 0 10px;
+
+  border-radius: 5px;
 }
 
 .catalog-pages .page-number-active {
   width: 44px;
+
   line-height: 44px;
-  border: 3px solid #dbdbdb;
+
   background-color: white;
+  border: 3px solid #dbdbdb;
 }

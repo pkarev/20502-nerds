@@ -204,13 +204,14 @@ img {
 
 .slider-indicator {
   position: absolute;
-  bottom: 96px;
+  bottom: 101px;
   left: 50%;
+  height: 8px;
   margin-left: -120px;
   width: 240px;
   text-align: center;
-  z-index: 1;
-  height: 18px;
+  z-index: 10;
+  font-size: 0;
 }
 
 .slider-indicator label {
@@ -218,29 +219,20 @@ img {
   vertical-align: top;
   margin: 0;
   padding: 0;
-  width: 8px;
-  height: 8px;
-  background-color: #ffffff;
-  border: 5px solid #ffffff;
-  border-radius: 50%;
-  margin-right: 17px;
-  font-size: 0;
-  cursor:pointer;
-}
-
-.slider-indicator label i {
-  display: block;
-  margin: 2px;
   width: 4px;
   height: 4px;
-  border-radius: 50%;
   background-color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 0px 5px #ffffff;
+  border-radius: 50%;
+  margin-right: 27px;
+  cursor:pointer;
 }
 
 #btn-1:checked ~ .slider-indicator label[for="btn-1"],
 #btn-2:checked ~ .slider-indicator label[for="btn-2"],
 #btn-3:checked ~ .slider-indicator label[for="btn-3"] {
-    background: #c1c1c1;
+    border-color: #c1c1c1;
 }
 
 .slider-indicator label:last-child {
@@ -325,14 +317,14 @@ img {
 }
 
 .services {
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 }
 
 .services::after {
   content: "";
 
   display: block;
-  height: 3px;
+  height: 2px;
 
   background-color: #eeeeee;
 }
@@ -443,7 +435,7 @@ img {
 
 .description h3 {
   margin: 0;
-  margin-top: 39px;
+  margin-top: 40px;
   padding: 0;
 
   font-weight: bold;
@@ -456,7 +448,7 @@ img {
 
 .description ul {
   margin: 0;
-  margin-bottom: 77px;
+  margin-bottom: 74px;
   padding: 0;
 }
 
@@ -495,7 +487,7 @@ img {
 
 .kpi h3 {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 29px;
   padding: 0 17px;
 
   font-weight: bold;
@@ -546,7 +538,7 @@ img {
   content: "";
 
   display: block;
-  height: 3px;
+  height: 2px;
 
   background-color: #eeeeee;
 }
@@ -606,7 +598,7 @@ img {
   content: "";
 
   display: block;
-  height: 3px;
+  height: 2px;
 
   background-color: #eeeeee;
 }
@@ -622,7 +614,7 @@ img {
 }
 
 .main-index .map {
-  margin-top: 74px;
+  margin-top: 78px;
 }
 
 .main-catalog .map {
@@ -1435,10 +1427,6 @@ a.sort-btn {
   margin-top: 52px;
 }
 
-.catalog-content img {
-  display: block;
-}
-
 .flypage {
   position: relative;
 
@@ -1508,13 +1496,31 @@ a.sort-btn {
 }
 
 .flypage img {
-  box-shadow: 0px 0px 0px -2px #e5e5e5;
+  display: block;
+  outline: 1px solid #e5e5e5;
+  outline-offset: -1px;
+}
+
+.flypage:hover img {
+  outline: none;
+}
+
+.flypage:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #2a333a;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  top: 40px;
 }
 
 .flypage-hover h2 {
   margin: 0;
   padding: 0;
 }
+
 
 .flypage-hover .flypage-title {
   display: block;
@@ -1578,6 +1584,10 @@ a.sort-btn {
 
 .flypage:hover .flypage-hover {
   display: block;
+}
+
+.flypage:hover {
+  box-shadow: 0px 10px 40px -10px;
 }
 
 .catalog-pages {

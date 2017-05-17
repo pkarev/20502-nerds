@@ -28,6 +28,20 @@ img {
   padding: 0 20px;
 }
 
+.visibility-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
 .btn {
   margin: 0;
   padding: 0;
@@ -192,9 +206,6 @@ img {
   height: 431px;
 }
 
-.slider input[type=radio] {
-  position: absolute;
-}
 
 .slider-indicator {
   position: absolute;
@@ -232,6 +243,12 @@ img {
 #btn-2:checked ~ .slider-indicator label[for="btn-2"],
 #btn-3:checked ~ .slider-indicator label[for="btn-3"] {
   border-color: #c1c1c1;
+}
+
+#btn-1:focus ~ .slider-indicator label[for="btn-1"],
+#btn-2:focus ~ .slider-indicator label[for="btn-2"],
+#btn-3:focus ~ .slider-indicator label[for="btn-3"] {
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 .slider-indicator label:last-child {
@@ -1220,9 +1237,8 @@ textarea:-moz-placeholder {
   opacity: 0.3;
 }
 
-.grid input,
-.features input {
-  display: none;
+input.visibility-hidden:focus + label {
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 .grid label::before {
@@ -1381,27 +1397,21 @@ textarea:-moz-placeholder {
   font-size: 14px;
   line-height: 18px;
   font-family: Roboto, Arial, sans-serif;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   text-decoration: none;
-
-  opacity: 0.3;
 }
 
 .arrange-btn-active {
-  opacity: 1;
+  color: rgba(0, 0, 0, 1);
 }
 
 .arrange-btn:hover:not(.arrange-btn-active) {
-  opacity: 0.6;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .arrange-btn:active:not(.arrange-btn-active) {
-  opacity: 1;
-}
-
-a.sort-btn {
-  font-size: 0;
+  color: rgba(0, 0, 0, 1);
 }
 
 .sort-btn {
@@ -1411,7 +1421,7 @@ a.sort-btn {
   width: 20px;
   height: 20px;
 
-  opacity: 0.2;
+  font-size: 0;
 }
 
 .sort-btn::before {
@@ -1425,9 +1435,12 @@ a.sort-btn {
   border-right-color: transparent;
   border-left-width: 5px;
   border-left-color: transparent;
+  opacity: 0.3;
 }
 
 .z-a::before {
+  top: 7px;
+
   border-bottom-width: 0;
 }
 
@@ -1437,15 +1450,15 @@ a.sort-btn {
   border-top-width: 0;
 }
 
-.sort-btn-active {
+.sort-btn-active::before {
   opacity: 1;
 }
 
-.sort-btn:hover:not(.sort-btn-active) {
+.sort-btn:hover:not(.sort-btn-active)::before {
   opacity: 0.6;
 }
 
-.sort-btn:active:not(.sort-btn-active) {
+.sort-btn:active:not(.sort-btn-active)::before {
   opacity: 1;
 }
 
@@ -1568,7 +1581,6 @@ a.sort-btn {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
-  text-decoration: none;
   text-decoration: none;
 }
 

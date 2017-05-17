@@ -54,30 +54,30 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="range-min">От<input type="text" name="range-min" id="range-min" value="0" disabled></label>
-                  <label class="range-max">До<input type="text" name="range-max" id="range-max" value="15 000" disabled></label>
+                  <label class="range-min">От<input type="text" name="range-min" id="range-min" value="0"></label>
+                  <label class="range-max">До<input type="text" name="range-max" id="range-max" value="15 000"></label>
                 </div>
               </fieldset>
               <fieldset class="grid">
                 <legend class="form-heading">Сетка:</legend>
-                <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                <input class="visibility-hidden" type="radio" name="grid" value="adaptive" id="adaptive" checked>
                 <label for="adaptive">Адаптивная</label>
-                <input type="radio" name="grid" value="fixed" id="fixed">
+                <input class="visibility-hidden" type="radio" name="grid" value="fixed" id="fixed">
                 <label for="fixed">Фиксированная</label>
-                <input type="radio" name="grid" value="flexible" id="flexible">
+                <input class="visibility-hidden" type="radio" name="grid" value="flexible" id="flexible">
                 <label for="flexible">Резиновая</label>
               </fieldset>
               <fieldset class="features">
                 <legend class="form-heading">Особенности:</legend>
-                <input type="checkbox" name="feature-slider" id="feature-slider" checked>
+                <input class="visibility-hidden" type="checkbox" name="feature-slider" id="feature-slider" checked>
                 <label for="feature-slider">Слайдер</label>
-                <input type="checkbox" name="feature-advantages" id="feature-advantages">
+                <input class="visibility-hidden" type="checkbox" name="feature-advantages" id="feature-advantages">
                 <label for="feature-advantages">Блок преимуществ</label>
-                <input type="checkbox" name="feature-news" id="feature-news" checked>
+                <input class="visibility-hidden" type="checkbox" name="feature-news" id="feature-news" checked>
                 <label for="feature-news">Новости</label>
-                <input type="checkbox" name="feature-gallery" id="feature-gallery">
+                <input class="visibility-hidden" type="checkbox" name="feature-gallery" id="feature-gallery">
                 <label for="feature-gallery">Галерея</label>
-                <input type="checkbox" name="feature-chart" id="feature-chart">
+                <input class="visibility-hidden" type="checkbox" name="feature-chart" id="feature-chart">
                 <label for="feature-chart">Корзина</label>
               </fieldset>
               <input class="btn" type="submit" value="Показать">
@@ -254,8 +254,5 @@
       <input class="btn" type="submit" value="Отправить">
     </form>
     <script src="js/script.min.js"></script>
-    <script>
-      document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
   </body>
 </html>

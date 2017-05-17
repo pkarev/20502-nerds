@@ -10,14 +10,10 @@ body {
   color: #283136;
 }
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
 img {
   max-width: 100%;
   height: auto;
 }
-
-/*Общие стили*/
 
 .clearfix::after {
   content: "";
@@ -57,8 +53,6 @@ img {
 
   background-color: #d7373b;
 }
-
-/*_________________________________________________________________*/
 
 .main-header,
 .catalog-header {
@@ -206,44 +200,49 @@ img {
   position: absolute;
   bottom: 101px;
   left: 50%;
+  z-index: 10;
+
+  width: 240px;
   height: 8px;
   margin-left: -120px;
-  width: 240px;
-  text-align: center;
-  z-index: 10;
+
   font-size: 0;
+  text-align: center;
 }
 
 .slider-indicator label {
   display: inline-block;
-  vertical-align: top;
-  margin: 0;
-  padding: 0;
   width: 4px;
   height: 4px;
+  margin: 0;
+  margin-right: 27px;
+  padding: 0;
+
+  vertical-align: top;
+
   background-color: #ffffff;
   border: 2px solid #ffffff;
-  box-shadow: 0px 0px 0px 5px #ffffff;
   border-radius: 50%;
-  margin-right: 27px;
-  cursor:pointer;
+  -webkit-box-shadow: 0 0 0 5px #ffffff;
+          box-shadow: 0 0 0 5px #ffffff;
+  cursor: pointer;
 }
 
 #btn-1:checked ~ .slider-indicator label[for="btn-1"],
 #btn-2:checked ~ .slider-indicator label[for="btn-2"],
 #btn-3:checked ~ .slider-indicator label[for="btn-3"] {
-    border-color: #c1c1c1;
+  border-color: #c1c1c1;
 }
 
 .slider-indicator label:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .slider-headline {
   display: block;
   margin: 0;
-  padding: 0;
   margin-top: 78px;
+  padding: 0;
 
   font-weight: bold;
   font-size: 55px;
@@ -251,14 +250,15 @@ img {
   font-family: Roboto, Arial, sans-serif;
 }
 
-.slide{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    display: none;
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .slide:nth-child(1) {
@@ -282,8 +282,8 @@ img {
 
 .slide p {
   margin: 0;
-  padding: 0;
   margin-bottom: 27px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 24px;
@@ -301,15 +301,15 @@ img {
 }
 
 #btn-1:checked ~ .slides .slide:nth-child(1) {
-    display: block;
+  display: block;
 }
 
 #btn-2:checked ~ .slides .slide:nth-child(2) {
-    display: block;
+  display: block;
 }
 
 #btn-3:checked ~ .slides .slide:nth-child(3) {
-    display: block;
+  display: block;
 }
 
 .main-header {
@@ -618,7 +618,7 @@ img {
 }
 
 .main-catalog .map {
-  margin-top: 58px;
+  margin-top: 59px;
 }
 
 .contacts {
@@ -718,7 +718,8 @@ img {
   left: 50%;
 
   background: url("../img/icon-sprite.png");
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .btn-vk::before {
@@ -784,6 +785,7 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 100;
 
   display: none;
   width: 760px;
@@ -793,19 +795,24 @@ img {
   padding: 73px 100px 84px;
 
   background-color: #ffffff;
-  box-shadow: 0 20px 50px -5px black;
-  z-index: 100;
+  -webkit-box-shadow: 0 20px 50px -5px black;
+          box-shadow: 0 20px 50px -5px black;
 }
 
 .feedback-form-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: 0.6s;
+
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .feedback-error {
-  animation-name: shake;
-  animation-duration: 0.6s;
+  -webkit-animation-name: shake;
+          animation-name: shake;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .feedback-form-close {
@@ -838,11 +845,13 @@ img {
 }
 
 .feedback-form-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .feedback-form-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .feedback-form-close:hover::before,
@@ -924,7 +933,8 @@ img {
 
 .feedback-form textarea {
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
   height: 118px;
   margin: 0;
@@ -1126,7 +1136,8 @@ textarea:-moz-placeholder {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   cursor: pointer;
 }
 
@@ -1225,7 +1236,9 @@ textarea:-moz-placeholder {
 
   background-color: white;
   border-radius: 50%;
-  box-shadow: 0 0 0 5px white,
+  -webkit-box-shadow: 0 0 0 5px white,
+  0 0 0 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 0 5px white,
   0 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -1240,7 +1253,9 @@ textarea:-moz-placeholder {
 
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
-  box-shadow: 0 0 0 5px white,
+  -webkit-box-shadow: 0 0 0 5px white,
+  0 0 0 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 0 5px white,
   0 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
@@ -1255,7 +1270,8 @@ textarea:-moz-placeholder {
   top: 7px;
   left: 1px;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 23px;
   height: 22px;
 
@@ -1484,9 +1500,10 @@ a.sort-btn {
 
   background-color: white;
   border-radius: 50%;
-  box-shadow:
-    23px 0 0 0 white,
-    46px 0 0 0 white;
+  -webkit-box-shadow: 23px 0 0 0 white,
+  46px 0 0 0 white;
+          box-shadow: 23px 0 0 0 white,
+  46px 0 0 0 white;
 }
 
 
@@ -1509,6 +1526,7 @@ a.sort-btn {
 
 .flypage img {
   display: block;
+
   outline: 1px solid #e5e5e5;
   outline-offset: -1px;
 }
@@ -1519,13 +1537,15 @@ a.sort-btn {
 
 .flypage:hover::after {
   content: "";
-  display: block;
   position: absolute;
-  background-color: #2a333a;
-  height: 1px;
-  width: 100%;
-  left: 0;
   top: 40px;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 1px;
+
+  background-color: #2a333a;
 }
 
 .flypage-hover h2 {
@@ -1555,9 +1575,11 @@ a.sort-btn {
 .flypage-hover p {
   display: block;
   width: 240px;
+  max-height: 200px;
   margin: 0 auto;
   margin-top: 16px;
   padding: 0 10px;
+  overflow: auto;
 
   font-size: 16px;
   line-height: 18px;
@@ -1599,13 +1621,14 @@ a.sort-btn {
 }
 
 .flypage:hover {
-  box-shadow: 0px 10px 40px -10px;
+  -webkit-box-shadow: 0 10px 40px -10px;
+          box-shadow: 0 10px 40px -10px;
 }
 
 .catalog-pages {
   float: left;
   width: 760px;
-  margin-top: 32px;
+  margin-top: 31px;
   margin-left: 400px;
 }
 
@@ -1630,8 +1653,9 @@ a.sort-btn {
 .catalog-pages .page-number,
 .catalog-pages .page-next {
   display: inline-block;
-  width: 50px;
+  min-width: 30px;
   margin-right: 10px;
+  padding: 0 10px;
 
   font-weight: bold;
   font-size: 16px;
@@ -1661,13 +1685,12 @@ a.sort-btn {
 
 .catalog-pages .page-next {
   min-width: 240px;
-  padding: 0 10px;
 
   border-radius: 5px;
 }
 
 .catalog-pages .page-number-active {
-  width: 44px;
+  min-width: 24px;
 
   line-height: 44px;
 
@@ -1717,15 +1740,86 @@ a.sort-btn {
   background-position: -5px -118px;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @keyframes bounce {
-  0% { transform: translateY(-2000px); }
-  70% { transform: translateY(30px);   }
-  90% {transform: translateY(-10px);   }
-  100% {transform: translateY(0);      }
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0px);                 }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(10px); }
-  20%, 40%, 60%, 80% { transform: translateX(-10px);     }
+  0%,
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
 }

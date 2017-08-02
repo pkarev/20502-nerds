@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <title>Нёрдс: Магазин</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="catalog-header">
+      <div class="container">
+        <div class="catalog-header-top clearfix">
+          <div class="header-logo">
+            <a href="index.html"><img src="img/header-logo.png" alt="Nerds" width="160" height="65"></a>
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a class="main-navigation-active">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="cart-block">
+            <a class="cart-btn" href="#">Корзина</a>
+          </div>
+        </div>
+        <div class="shop-title">
+          <h1>Магазин готовых шаблонов</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main-catalog">
+      <div class="container">
+        <div class="catalog clearfix">
+          <div class="filter">
+            <form method="get" action="/">
+              <fieldset class="price">
+                <legend class="form-heading">Стоимость:</legend>
+                <div class="price-range">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="range-min">От<input type="text" name="range-min" id="range-min" value="0"></label>
+                  <label class="range-max">До<input type="text" name="range-max" id="range-max" value="15 000"></label>
+                </div>
+              </fieldset>
+              <fieldset class="grid">
+                <legend class="form-heading">Сетка:</legend>
+                <input class="visibility-hidden" type="radio" name="grid" value="adaptive" id="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+                <input class="visibility-hidden" type="radio" name="grid" value="fixed" id="fixed">
+                <label for="fixed">Фиксированная</label>
+                <input class="visibility-hidden" type="radio" name="grid" value="flexible" id="flexible">
+                <label for="flexible">Резиновая</label>
+              </fieldset>
+              <fieldset class="features">
+                <legend class="form-heading">Особенности:</legend>
+                <input class="visibility-hidden" type="checkbox" name="feature-slider" id="feature-slider" checked>
+                <label for="feature-slider">Слайдер</label>
+                <input class="visibility-hidden" type="checkbox" name="feature-advantages" id="feature-advantages">
+                <label for="feature-advantages">Блок преимуществ</label>
+                <input class="visibility-hidden" type="checkbox" name="feature-news" id="feature-news" checked>
+                <label for="feature-news">Новости</label>
+                <input class="visibility-hidden" type="checkbox" name="feature-gallery" id="feature-gallery">
+                <label for="feature-gallery">Галерея</label>
+                <input class="visibility-hidden" type="checkbox" name="feature-chart" id="feature-chart">
+                <label for="feature-chart">Корзина</label>
+              </fieldset>
+              <input class="btn" type="submit" value="Показать">
+            </form>
+          </div>
+          <div class="arrange clearfix">
+            <span class="arrange-heading">Сортировать:</span>
+            <ul class="arrange-group-1 ">
+              <li>
+                <a class="arrange-btn arrange-btn-active">По цене</a>
+              </li>
+              <li>
+                <a class="arrange-btn" href="#">По типу</a>
+              </li>
+              <li>
+                <a class="arrange-btn" href="#">По названию</a>
+              </li>
+            </ul>
+            <ul class="arrange-group-2">
+              <li>
+                <a class="sort-btn z-a sort-btn-active">Сортировать по убыванию</a>
+              </li>
+              <li>
+                <a class="sort-btn a-z" href="#">Сортировать по возрастанию</a>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-content clearfix">
+            <div class="flypage">
+              <div class="flypage-image">
+                <img src="img/flypage-sedona.jpg" alt="Sedona" width="360" height="576">
+              </div>
+              <div class="flypage-hover">
+                <h2><a class="flypage-title" href="#">Sedona</a></h2>
+                <p>
+                  Информационный сайт<br>
+                  для туристов
+                </p>
+                <a class="flypage-price" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="flypage">
+              <div class="flypage-image">
+                <img src="img/flypage-pink.jpg" alt="Pink app" width="360" height="576">
+              </div>
+              <div class="flypage-hover">
+                <h2><a class="flypage-title" href="#">Pink app</a></h2>
+                <p>
+                  Продуктовый лендинг<br>
+                  приложения для iOS и Android
+                </p>
+                <a class="flypage-price" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="flypage">
+              <div class="flypage-image">
+                <img src="img/flypage-borodinskiy.jpg" alt="Barbershop" width="360" height="576">
+              </div>
+              <div class="flypage-hover">
+                <h2><a class="flypage-title" href="#">Barbershop</a></h2>
+                <p>
+                  Сайт салона красоты.<br>
+                  Для мужчин, да.
+                </p>
+                <a class="flypage-price" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="flypage">
+              <div class="flypage-image">
+                <img src="img/flypage-mishka.jpg" alt="Mishka" width="360" height="576">
+              </div>
+              <div class="flypage-hover">
+                <h2><a class="flypage-title" href="#">Mishka</a></h2>
+                <p>
+                  Интернет-магазин<br>
+                  вязаных игрушек
+                </p>
+                <a class="flypage-price" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="flypage">
+              <div class="flypage-image">
+                <img src="img/flypage-aplus.jpg" alt="A plus" width="360" height="576">
+              </div>
+              <div class="flypage-hover">
+                <h2><a class="flypage-title" href="#">A plus</a></h2>
+                <p>
+                  Лендинг курсов повышения<br>
+                  квалификации
+                </p>
+                <a class="flypage-price" href="#">9 900 руб.</a>
+              </div>
+            </div>
+            <div class="flypage">
+              <div class="flypage-image">
+                <img src="img/flypage-kvast.jpg" alt="Кваст" width="360" height="576">
+              </div>
+              <div class="flypage-hover">
+                <h2><a class="flypage-title" href="#">Кваст</a></h2>
+                <p>
+                  Промо-сайт производителя<br>
+                  крафтового кваса
+                </p>
+                <a class="flypage-price" href="#">9 900 руб.</a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-pages">
+            <ol>
+              <li>
+                <a class="page-number page-number-active">1</a>
+              </li>
+              <li>
+                <a class="page-number" href="#">2</a>
+              </li>
+              <li>
+                <a class="page-number" href="#">3</a>
+              </li>
+            </ol>
+            <a class="page-next" href="#">Следующая</a>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1494932077880" allowfullscreen></iframe>
+        <section class="contacts">
+          <h2>Nёrds design studio</h2>
+          <p>
+            191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8<br><br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a class="btn feedback-form-open" href="write-us.html">Напишите нам</a>
+        </section>
+      </div>
+    </main>
+    <footer class="footer catalog-footer clearfix">
+      <div class="container clearfix">
+        <div class="social">
+          <ul>
+            <li>
+              <a class="social-btn btn-vk" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="social-btn btn-fb" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-btn btn-inst" href="#">Инстаграмм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-cta">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+    <form class="feedback-form" method="post" action="/">
+      <button class="feedback-form-close" type="button" title="Закрыть">Закрыть</button>
+      <b>Напишите нам</b>
+      <a class="close-form" href="#"></a>
+      <div class="credentials clearfix">
+        <div class="feedback-form-left">
+          <label for="username">Ваше имя:</label>
+          <input type="text" name="username" id="username" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="feedback-form-right">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+        </div>
+      </div>
+      <label for="feedback">Текст письма:</label>
+      <textarea name="feedback" id="feedback" placeholder="В свободной форме"></textarea>
+      <input class="btn" type="submit" value="Отправить">
+    </form>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
